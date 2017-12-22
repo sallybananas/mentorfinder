@@ -20,7 +20,7 @@ function apiRoutes(app) {
   });
 
   // A POST routes /api/mentors. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
-  app.post('/api/mentor', function (req, res) {
+  app.post('/api/mentors', function (req, res) {
 
     // Parse new mentor input to get integers (AJAX post seemed to make the numbers strings)
     var newMentor = {
@@ -42,7 +42,7 @@ function apiRoutes(app) {
       // Check each mentor's scores and sum difference in points
       var currentComparison = 0;
       for(var j=0; j < newMentor.scores.length; j++){
-        currentComparison += Math.abs( newMentor.scores[j] - MentorData[i].scores[j] );
+        currentComparison += Math.abs( newMentor.scores[j] - mentorData[i].scores[j] );
       }
 
       // Push each comparison between mentors to array

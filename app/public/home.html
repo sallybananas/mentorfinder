@@ -3065,7 +3065,7 @@
 
         // POST the newMentor to the mentor.js file and get back the best match
         var currentURL = window.location.origin;
-        $.post(currentURL + "/api/mentor", newMentor, function(data){
+        $.post(currentURL + "/api/mentors", newMentor, function(data){
 console.log(data)
           // Add Best Match attributes to Modal
           $('#matchName').text(data.name);
