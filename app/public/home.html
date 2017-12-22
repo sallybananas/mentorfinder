@@ -450,7 +450,7 @@
 
     function collectInputs(){
 
-      // Make new friend object
+      // Make new mentor object
       var newMentor = {
         name: $('#formName').val().trim(),
         photo: $('#formImage').val().trim(),
@@ -465,10 +465,10 @@
        // This counters the async behavior of $.each()
       .promise().done(function(){
 
-        // Push the array of scores to the new friend object
+        // Push the array of scores to the new mentor object
         newMentor.scores = scoresArray;
 
-        // POST the newFriend to the friends.js file and get back the best match
+        // POST the newMentor to the mentor.js file and get back the best match
         var currentURL = window.location.origin;
         $.post(currentURL + "/api/mentor", newMentor, function(data){
 
@@ -477,7 +477,7 @@
           $('#matchImg').attr('src', data.photo);
 
           // Show the modal with the best match
-          $("#resultsModal").modal('toggle');
+          $("#surveyResultsModal").modal('toggle');
 
         }); // end AJAX POST
 

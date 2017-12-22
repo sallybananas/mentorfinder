@@ -3,7 +3,7 @@
 // @comment: Assignment 13 - Mentor Finder Express Node app
 
 // Templated Friends Data
-var friendsData = [
+var mentorData = [
     {
       name: "Dan Rosado",
       photo: "https://daks2k3a4ib2z.cloudfront.net/5887bd5697719f6a6e908a81/59891a10d7ec660001c0123b_headshotArtboard%204.jpg",
@@ -44,4 +44,4 @@ var friendsData = [
 
 
   // Export to API Route
-  module.exports = friendsData;
+  module.exports = mentorData;
