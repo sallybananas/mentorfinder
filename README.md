@@ -1,7 +1,8 @@
 # Mentor Finder
 A fullstack Mentor match making application using the Express package for Node.js!
 
-<!-- Check out the deployed app on Heroku [here](https://mentorfinder.herokuapp.com/)! -->
+Check out the deployed app on Heroku [here](https://git.heroku.com/protected-refuge-32871.git
+)!
 
 This app uses Express to serve 2 static HTML files and 2 API routes to get and post data.
 
