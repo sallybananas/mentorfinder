@@ -1,25 +1,25 @@
 {
-  "name": "MentorFinder",
+  "name": "mentorfinder",
   "version": "1.0.0",
-  "description": "A fullstack app to match those seeking a mentor with an available one.",
+  "description": "A fullstack Mentor match making application using the Express package for Node.js!",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/sallybananas/mentorfinder.git"
   },
-  "author": "sallybananas",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/sallybananas/mentorfinder/issues"
   },
-  "homepage": "",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/sallybananas/mentorfinder#readme"
 }
